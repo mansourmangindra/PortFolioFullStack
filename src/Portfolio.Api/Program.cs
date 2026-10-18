@@ -1,3 +1,4 @@
+
 using Portfolio.Api.Middlewares;
 using Portfolio.Application.Extensions;
 using Portfolio.Infrastructure.Extensions;
@@ -36,7 +37,7 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
