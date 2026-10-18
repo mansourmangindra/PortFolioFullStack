@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
         //      .AllowAnyMethod();
         policy.WithOrigins(
                 "http://localhost:4200",
-                "https://lively-mud-0589c790f.4.azurestaticapps.net" // <-- Add your live Azure frontend URL here
+                "https://portfolio-api-app.whitegrass-469e9d46.eastus.azurecontainerapps.io/api/v1" // <-- Add your live Azure frontend URL here
               )
               .AllowAnyHeader()
               .AllowAnyMethod();
