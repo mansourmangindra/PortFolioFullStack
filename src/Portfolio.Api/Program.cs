@@ -15,19 +15,21 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularClient", policy =>
     {
-        //policy.WithOrigins("http://localhost:4200")
-        //      .AllowAnyHeader()
-        //      .AllowAnyMethod();
-        policy.WithOrigins(
+        policy
+            .WithOrigins(
                 "http://localhost:4200",
-                "https://portfolio-api-app.whitegrass-469e9d46.eastus.azurecontainerapps.io/api/v1" // <-- Add your live Azure frontend URL here
-              )
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+                "https://lively-mud-0589c790f.4.azurestaticapps.net"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
 var app = builder.Build();
+
+app.UseRouting();
+
+app.UseCors("AllowAngularClient");
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
@@ -35,8 +37,6 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
-
-app.UseCors("AllowAngularClient");
 
 app.UseAuthorization();
 
