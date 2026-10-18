@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "rMlupwwB8PI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Demi\\PortfolioApp\\src\\Portfolio.Api\\Portfolio.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Demi\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation\\12.2.0\\fluentvalidation.12.2.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.2.0\\fluentvalidation.dependencyinjectionextensions.12.2.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.24.2-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.24.2-preview.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\mongodb.bson\\3.12.0\\mongodb.bson.3.12.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\mongodb.driver\\3.12.0\\mongodb.driver.3.12.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\sharpcompress\\0.48.1\\sharpcompress.0.48.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\snappier\\1.3.1\\snappier.1.3.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\swashbuckle.aspnetcore\\10.3.0\\swashbuckle.aspnetcore.10.3.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.3.0\\swashbuckle.aspnetcore.swagger.10.3.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.3.0\\swashbuckle.aspnetcore.swaggergen.10.3.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.3.0\\swashbuckle.aspnetcore.swaggerui.10.3.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\bin\Debug\net10.0\Portfolio.Domain.deps.json
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\bin\Debug\net10.0\Portfolio.Domain.dll
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\bin\Debug\net10.0\Portfolio.Domain.pdb
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.csproj.AssemblyReference.cache
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.AssemblyInfoInputs.cache
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.AssemblyInfo.cs
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.sourcelink.json
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.dll
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\refint\Portfolio.Domain.dll
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfolio.Domain.pdb
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\ref\Portfolio.Domain.dll
+C:\Users\Demi\PortfolioApp\src\Portfolio.Domain\obj\Debug\net10.0\Portfoli.8D0C0EFC.Up2Date
