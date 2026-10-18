@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Iq6Nn3tcMQI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Demi\\PortfolioApp\\src\\Portfolio.Domain\\Portfolio.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Demi\\.nuget\\packages\\mongodb.bson\\3.12.0\\mongodb.bson.3.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}

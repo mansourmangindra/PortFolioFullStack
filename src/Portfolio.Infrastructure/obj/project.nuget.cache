@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "jHbXEXJvZGQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Demi\\PortfolioApp\\src\\Portfolio.Infrastructure\\Portfolio.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Demi\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation\\12.2.0\\fluentvalidation.12.2.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.2.0\\fluentvalidation.dependencyinjectionextensions.12.2.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.13\\microsoft.extensions.configuration.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.13\\microsoft.extensions.configuration.abstractions.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.13\\microsoft.extensions.configuration.binder.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.13\\microsoft.extensions.dependencyinjection.abstractions.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.options\\10.0.13\\microsoft.extensions.options.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.13\\microsoft.extensions.options.configurationextensions.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.13\\microsoft.extensions.primitives.10.0.13.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\mongodb.bson\\3.12.0\\mongodb.bson.3.12.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\mongodb.driver\\3.12.0\\mongodb.driver.3.12.0.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\sharpcompress\\0.48.1\\sharpcompress.0.48.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\snappier\\1.3.1\\snappier.1.3.1.nupkg.sha512",
+    "C:\\Users\\Demi\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": []
+}
