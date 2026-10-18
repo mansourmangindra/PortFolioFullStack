@@ -10,56 +10,55 @@ using System.Text;
 
 namespace Portfolio.Infrastructure.Repositories
 {
-    public class MongoRepository<T> : IRepository<T> where T: BaseEntity
+    public class MongoRepository<T> : IRepository<T> where T : BaseEntity
     {
         protected readonly IMongoCollection<T> _collection;
-        public MongoRepository(IMongoClient mongoClient, IOptions<MongoDbSettings> settings)
+
+        public MongoRepository(IMongoClient mongoClient, Microsoft.Extensions.Options.IOptions<Persistence.MongoDbSettings> settings)
         {
             var database = mongoClient.GetDatabase(settings.Value.DatabaseName);
-
-            // Convention: Collection name matches the Entity class name (e.g., "Projects", "Skills")
-            _collection = database.GetCollection<T>(typeof(T).Name);
+            var collectionName = typeof(T).Name.ToLowerInvariant() + "s";
+            _collection = database.GetCollection<T>(collectionName);
         }
 
-        public virtual async Task<T?> GetByIdAsync(string id, CancellationToken cancellationToken = default)
-        {
-            var filter = Builders<T>.Filter.Eq(e => e.Id, id);
-            return await _collection.Find(filter).FirstOrDefaultAsync(cancellationToken);
-        }
-
-        public virtual async Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken = default)
         {
             return await _collection.Find(_ => true).ToListAsync(cancellationToken);
         }
 
-        public virtual async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
+        public async Task<T?> GetByIdAsync(string id, CancellationToken cancellationToken = default)
+        {
+            return await _collection.Find(x => x.Id == id).FirstOrDefaultAsync(cancellationToken);
+        }
+
+        public async Task<IEnumerable<T>> FindAsync(System.Linq.Expressions.Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
         {
             return await _collection.Find(predicate).ToListAsync(cancellationToken);
         }
 
-        public virtual async Task AddAsync(T entity, CancellationToken cancellationToken = default)
+        public async Task AddAsync(T entity, CancellationToken cancellationToken = default)
         {
-            entity.CreatedAt = DateTime.UtcNow;
+            if (string.IsNullOrEmpty(entity.Id))
+            {
+                entity.Id = MongoDB.Bson.ObjectId.GenerateNewId().ToString();
+            }
             await _collection.InsertOneAsync(entity, null, cancellationToken);
         }
 
-        public virtual async Task UpdateAsync(string id, T entity, CancellationToken cancellationToken = default)
+        public async Task UpdateAsync(string id, T entity, CancellationToken cancellationToken = default)
         {
-            entity.Id = id;
-            entity.UpdatedAt = DateTime.UtcNow;
-            var filter = Builders<T>.Filter.Eq(e => e.Id, id);
-            await _collection.ReplaceOneAsync(filter, entity, new ReplaceOptions { IsUpsert = false }, cancellationToken);
+            await _collection.ReplaceOneAsync(x => x.Id == id, entity, cancellationToken: cancellationToken);
         }
 
-        public virtual async Task DeleteAsync(string id, CancellationToken cancellationToken = default)
+        public async Task DeleteAsync(string id, CancellationToken cancellationToken = default)
         {
-            var filter = Builders<T>.Filter.Eq(e => e.Id, id);
-            await _collection.DeleteOneAsync(filter, cancellationToken);
+            await _collection.DeleteOneAsync(x => x.Id == id, cancellationToken);
         }
 
-        public virtual async Task<bool> ExistsAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
+        public async Task<bool> ExistsAsync(System.Linq.Expressions.Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
         {
-            return await _collection.Find(predicate).AnyAsync(cancellationToken);
+            var count = await _collection.CountDocumentsAsync(predicate, cancellationToken: cancellationToken);
+            return count > 0;
         }
     }
 }
