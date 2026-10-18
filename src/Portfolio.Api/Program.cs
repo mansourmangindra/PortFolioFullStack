@@ -15,7 +15,13 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularClient", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        //policy.WithOrigins("http://localhost:4200")
+        //      .AllowAnyHeader()
+        //      .AllowAnyMethod();
+        policy.WithOrigins(
+                "http://localhost:4200",
+                "https://lively-mud-0589c790f.4.azurestaticapps.net" // <-- Add your live Azure frontend URL here
+              )
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
