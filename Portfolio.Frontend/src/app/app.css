@@ -1,0 +1,21 @@
+.portfolio-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-bottom: 3rem;
+}
+.hero-header {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+.hero-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+.hero-header p {
+  margin: 0;
+  color: #aaa;
+  font-size: 1.2rem;
+}
